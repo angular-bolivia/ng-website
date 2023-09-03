@@ -1,49 +1,43 @@
 import { Component } from '@angular/core';
 
+import { AboutUsComponent } from '../components/home/about-us/about-us.component';
+import { BannerComponent } from '../components/home/banner/banner.component';
+import { ContactComponent } from '../components/home/contact/contact.component';
+import { HighlightedEventsComponent } from '../components/home/highlighted-events/highlighted-events.component';
+import { JoinTheTeamComponent } from '../components/home/join-the-team/join-the-team.component';
+import { NavbarComponent } from '../components/layout/navbar/navbar.component';
+import { OrganizersComponent } from '../components/home/organizers/organizers.component';
+
 @Component({
-  selector: 'app-home',
+  selector: 'ng-home',
   standalone: true,
+  imports: [
+    AboutUsComponent,
+    BannerComponent,
+    ContactComponent,
+    HighlightedEventsComponent,
+    JoinTheTeamComponent,
+    NavbarComponent,
+    OrganizersComponent,
+  ],
   template: `
-    <div>
-      <a href="https://analogjs.org/" target="_blank">
-        <img alt="Analog Logo" class="logo analog" src="/analog.svg" />
-      </a>
+    <ng-navbar></ng-navbar>
+    <ng-banner></ng-banner>
+    <div class="about-us">
+      <ng-highlighted-events></ng-highlighted-events>
+      <ng-about-us></ng-about-us>
     </div>
-
-    <h2>Analog</h2>
-
-    <h3>The fullstack meta-framework for Angular!</h3>
-
-    <div class="card">
-      <button type="button" (click)="increment()">Count {{ count }}</button>
-    </div>
-
-    <p class="read-the-docs">
-      For guides on how to customize this project, visit the
-      <a href="https://analogjs.org" target="_blank">Analog documentation</a>
-    </p>
+    <ng-organizers></ng-organizers>
+    <ng-join-the-team></ng-join-the-team>
+    <ng-contact></ng-contact>
   `,
   styles: [
     `
-      .logo {
-        will-change: filter;
-      }
-      .logo:hover {
-        filter: drop-shadow(0 0 2em #646cffaa);
-      }
-      .logo.angular:hover {
-        filter: drop-shadow(0 0 2em #42b883aa);
-      }
-      .read-the-docs {
-        color: #888;
+      .about-us {
+        background-image: url('/img/background.png');
+        background-size: cover;
       }
     `,
   ],
 })
-export default class HomeComponent {
-  count = 0;
-
-  increment() {
-    this.count++;
-  }
-}
+export default class HomeComponent {}

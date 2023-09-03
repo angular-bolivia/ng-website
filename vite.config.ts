@@ -1,5 +1,6 @@
 /// <reference types="vitest" />
 
+import angular from '@analogjs/vite-plugin-angular';
 import { defineConfig } from 'vite';
 import analog from '@analogjs/platform';
 
@@ -12,7 +13,12 @@ export default defineConfig(({ mode }) => ({
   resolve: {
     mainFields: ['module'],
   },
-  plugins: [analog()],
+  plugins: [
+    analog(),
+    angular({
+      inlineStylesExtension: 'scss',
+    }),
+  ],
   test: {
     globals: true,
     environment: 'jsdom',
