@@ -1,6 +1,8 @@
 .navbar {
   background-color: #141414;
   height: 64px;
+  position: relative;
+  z-index: 1;
 
   .container {
     height: 100%;
