@@ -1,7 +1,9 @@
 .navbar {
   background-color: #141414;
+  box-shadow: 0 2px 3px 1px #14141480;
   height: 64px;
-  position: relative;
+  position: fixed;
+  width: 100%;
   z-index: 1;
 
   .container {
@@ -41,6 +43,12 @@
       
       @media (min-width: 768px) {
         gap: 24px;
+      }
+
+      a {
+        align-items: center;
+        display: flex;
+        justify-content: center;
       }
 
       .navbar__mobile-text {
