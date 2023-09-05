@@ -3,6 +3,13 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
+
+@font-face {
+  font-family: ClashGrotesk;
+  src: url(/font/ClashGrotesk-Regular.ttf) format("opentype");
+}
+
 /* You can add global styles to this file, and also import other style files */
 :root {
   color: #fff;
@@ -41,4 +48,14 @@ body {
   @media screen and (min-width: 1200px) {
     max-width: 1140px;
   }
+}
+
+.main-button {
+  background-color: #166ac5;
+  border-radius: 4px;
+  display: block;
+  font-size: 14px;
+  font-weight: 500;
+  padding: 10px 16px;
+  width: fit-content;
 }

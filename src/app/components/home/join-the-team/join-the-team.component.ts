@@ -34,11 +34,39 @@ import { Component } from '@angular/core';
               </div>
               <div class="join-the-team__card-action">
                 <a
+                  class="main-button"
                   href="https://forms.gle/N8J3n5SUDymLJAyv8"
                   rel="noopener noreferrer"
                   target="_blank"
                 >
                   {{ 'Postula como speaker' | uppercase }}
+                </a>
+              </div>
+            </div>
+            <div class="join-the-team__card">
+              <div class="join-the-team__card-title">
+                <h3>¿Quieres unirte a la comunidad?</h3>
+              </div>
+              <img
+                src="/img/team-card.png"
+                alt="Fotografía de la comunidad en un evento"
+              />
+              <div class="join-the-team__card-content">
+                <p>¿Tienes muchas ganas de organizar eventos y aprender?</p>
+                <br />
+                <p>
+                  ¡Únete a nosotros! Participa de nuestro siguiente evento para
+                  no perder la oportunidad de ser parte de la comunidad.
+                </p>
+              </div>
+              <div class="join-the-team__card-action">
+                <a
+                  class="main-button"
+                  href="https://meetu.ps/c/36FDq/zlFnn/a"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                >
+                  {{ 'Inscríbete al próximo evento' | uppercase }}
                 </a>
               </div>
             </div>
@@ -67,6 +95,9 @@ import { Component } from '@angular/core';
 
           .join-the-team__cards {
             display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
 
             .join-the-team__card {
               background-color: #1c1c1c;
@@ -88,16 +119,6 @@ import { Component } from '@angular/core';
 
               .join-the-team__card-action {
                 padding: 8px 16px;
-
-                a {
-                  background-color: #166ac5;
-                  border-radius: 4px;
-                  display: block;
-                  font-size: 14px;
-                  font-weight: 500;
-                  padding: 16px;
-                  width: fit-content;
-                }
               }
             }
           }

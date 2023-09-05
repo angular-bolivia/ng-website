@@ -57,6 +57,12 @@ import { Component } from '@angular/core';
               flex-wrap: nowrap;
               min-width: 540px;
             }
+
+            img {
+              height: auto;
+              object-fit: contain;
+              width: 100px;
+            }
           }
         }
       }

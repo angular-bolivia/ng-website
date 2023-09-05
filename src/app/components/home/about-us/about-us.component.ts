@@ -25,16 +25,25 @@ import { Component } from '@angular/core';
           <div class="about-us__block">
             <h2>{{ 'Nuestra historia' | uppercase }}</h2>
             <p>
-              Fundada en el 2016 por Luis Aviles en Cochabamba, el propósito
-              inicial fue el crear un espacio para el aprendizaje y el
-              networking entre desarrolladores de software en torno al framework
-              de Angular.
+              Fundada en marzo de 2017 por
+              <a
+                href="https://www.linkedin.com/in/luixaviles/"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                Luis Aviles
+              </a>
+              en Cochabamba. La comunidad nace con la idea de crear un espacio
+              seguro para compartir aprendizajes y experiencias en torno a
+              tecnologías web modernas con un enfoque en Angular, un framework
+              de desarrollo web dirigido por Google.
             </p>
             <br />
             <p>
-              Desde entonces la comunidad ha organizado eventos internacionales
-              y llegado a varios países a través de sus eventos virtuales en la
-              pandemia.
+              Desde entonces la comunidad ha organizado eventos locales e
+              internacionales, generando un gran impacto por la calidad de sus
+              charlas y speakers, y tras la llegada de la pandemia extendió su
+              alcance hasta varios países a través de sus eventos virtuales.
             </p>
             <img
               src="/img/history-photo.png"
@@ -68,8 +77,15 @@ import { Component } from '@angular/core';
               margin-block-end: 24px;
             }
 
+            a {
+              color: #33f8d8;
+            }
+
             img {
+              border-radius: 4px;
               margin-top: 42px;
+              max-width: 646px;
+              width: 100%;
             }
           }
         }

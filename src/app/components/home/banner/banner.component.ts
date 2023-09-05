@@ -10,7 +10,7 @@ import { Component } from '@angular/core';
       <div class="banner__content">
         <img
           class="banner__logo"
-          src="/img/ng-logo.png"
+          src="/img/ng-logo.svg"
           alt="Logo de Angular Bolivia"
         />
         <h1>
@@ -40,16 +40,19 @@ import { Component } from '@angular/core';
           flex-direction: column;
           max-width: 100%;
           padding: 0 15px;
-          width: 896px;
+          width: 972px;
 
           h1 {
-            font-size: 38px;
-            font-weight: 400;
+            font-family: ClashGrotesk, sans-serif;
+            font-size: 30px;
+            letter-spacing: 4px;
             line-height: normal;
             text-align: center;
+            text-shadow: 0 4px 4px #00000070;
 
             @media (min-width: 576px) {
-              font-size: 48px;
+              font-size: 40px;
+              letter-spacing: 8px;
             }
           }
 

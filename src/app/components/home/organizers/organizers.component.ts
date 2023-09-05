@@ -20,7 +20,7 @@ import { Component } from '@angular/core';
                 rel="noopener noreferrer"
                 target="_blank"
               >
-                <img src="/img/linked-in-logo.png" alt="Logo de LinkedIn" />
+                <img src="/img/linkedin-logo.svg" alt="Logo de LinkedIn" />
               </a>
             </div>
             <div class="organizers__profile">
@@ -32,7 +32,7 @@ import { Component } from '@angular/core';
                 rel="noopener noreferrer"
                 target="_blank"
               >
-                <img src="/img/linked-in-logo.png" alt="Logo de LinkedIn" />
+                <img src="/img/linkedin-logo.svg" alt="Logo de LinkedIn" />
               </a>
             </div>
             <div class="organizers__profile">
@@ -44,7 +44,7 @@ import { Component } from '@angular/core';
                 rel="noopener noreferrer"
                 target="_blank"
               >
-                <img src="/img/linked-in-logo.png" alt="Logo de LinkedIn" />
+                <img src="/img/linkedin-logo.svg" alt="Logo de LinkedIn" />
               </a>
             </div>
             <div class="organizers__profile">
@@ -56,7 +56,7 @@ import { Component } from '@angular/core';
                 rel="noopener noreferrer"
                 target="_blank"
               >
-                <img src="/img/linked-in-logo.png" alt="Logo de LinkedIn" />
+                <img src="/img/linkedin-logo.svg" alt="Logo de LinkedIn" />
               </a>
             </div>
           </div>
@@ -94,6 +94,11 @@ import { Component } from '@angular/core';
               flex-direction: column;
               padding: 0 5px;
 
+              & > img {
+                height: 180px;
+                width: 180px;
+              }
+
               .organizers__name {
                 color: #33f8d8;
                 font-size: 20px;
@@ -103,6 +108,7 @@ import { Component } from '@angular/core';
 
               a {
                 display: block;
+                padding: 8px;
                 width: fit-content;
               }
             }

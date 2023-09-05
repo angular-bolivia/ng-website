@@ -11,35 +11,45 @@ import { Component } from '@angular/core';
         <div class="navbar__content">
           <div class="navbar__logo">
             <img
-              src="/img/main-logo.png"
+              src="/img/main-logo.svg"
               alt="Logo principal de Angular Bolivia"
             />
             <span>{{ 'ngular Bolivia' | uppercase }}</span>
           </div>
-          <div class="navbar__social-links">
+          <div class="navbar__links">
+            <a
+              class="main-button"
+              href="https://meetu.ps/c/36FDq/zlFnn/a"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              <span class="navbar__mobile-text">
+                {{ 'Inscríbete' | uppercase }}
+              </span>
+              <span class="navbar__desktop-text">
+                {{ 'Inscríbete al próximo evento' | uppercase }}
+              </span>
+            </a>
             <a
               href="https://www.linkedin.com/company/angular-bolivia/"
               rel="noopener noreferrer"
               target="_blank"
             >
-              <img src="/img/linked-in-logo-large.png" alt="Logo de LinkedIn" />
+              <img src="/img/linkedin-logo.svg" alt="Logo de LinkedIn" />
             </a>
             <a
               href="https://www.facebook.com/angularBolivia/"
               rel="noopener noreferrer"
               target="_blank"
             >
-              <img src="/img/facebook-logo-large.png" alt="Logo de Facebook" />
+              <img src="/img/facebook-logo.svg" alt="Logo de Facebook" />
             </a>
             <a
               href="https://www.instagram.com/angularbolivia/"
               rel="noopener noreferrer"
               target="_blank"
             >
-              <img
-                src="/img/instagram-logo-large.png"
-                alt="Logo de Instagram"
-              />
+              <img src="/img/instagram-logo.svg" alt="Logo de Instagram" />
             </a>
           </div>
         </div>
@@ -65,6 +75,12 @@ import { Component } from '@angular/core';
           .navbar__logo {
             align-items: center;
             display: flex;
+            font-family: Roboto, sans-serif;
+
+            img {
+              height: 36px;
+              width: 34px;
+            }
 
             span {
               display: none;
@@ -76,8 +92,26 @@ import { Component } from '@angular/core';
             }
           }
 
-          .navbar__social-links {
+          .navbar__links {
+            align-items: center;
             display: flex;
+            gap: 24px;
+
+            .navbar__mobile-text {
+              display: inline;
+
+              @media (min-width: 768px) {
+                display: none;
+              }
+            }
+
+            .navbar__desktop-text {
+              display: none;
+
+              @media (min-width: 768px) {
+                display: inline;
+              }
+            }
           }
         }
       }
