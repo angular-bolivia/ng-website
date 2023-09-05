@@ -21,6 +21,10 @@
 
       a {
         color: #33f8d8;
+
+        &:hover {
+          text-decoration: underline;
+        }
       }
 
       img {

@@ -30,9 +30,8 @@ import { Component } from '@angular/core';
                 href="https://www.linkedin.com/in/luixaviles/"
                 rel="noopener noreferrer"
                 target="_blank"
+                >Luis Aviles</a
               >
-                Luis Aviles
-              </a>
               en Cochabamba. La comunidad nace con la idea de crear un espacio
               seguro para compartir aprendizajes y experiencias en torno a
               tecnologías web modernas con un enfoque en Angular, un framework

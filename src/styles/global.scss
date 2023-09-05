@@ -22,13 +22,21 @@ body {
   min-height: 100vh;
 }
 
-h1, h2, h3, p {
+h1,
+h2,
+h3,
+p {
   margin: 0;
 }
 
 a {
   color: inherit;
   text-decoration: inherit;
+  transition: all ease 0.2s;
+
+  &:hover {
+    transform: translateY(-1px);
+  }
 }
 
 .container {
@@ -69,4 +77,8 @@ a {
   font-weight: 500;
   padding: 10px 16px;
   width: fit-content;
+
+  &:hover {
+    box-shadow: 0 2px 3px 1px #33f8d880;
+  }
 }
