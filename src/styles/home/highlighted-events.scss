@@ -21,7 +21,7 @@
       }
     }
 
-    .highlighted-events__logo {
+    .highlighted-events__logos {
       display: flex;
       flex-wrap: wrap;
       gap: 46px;
@@ -32,10 +32,16 @@
         min-width: 540px;
       }
 
-      img {
-        height: auto;
-        object-fit: contain;
-        width: 100px;
+      a {
+        align-items: center;
+        display: flex;
+        justify-content: center;
+
+        img {
+          height: auto;
+          object-fit: contain;
+          width: 100px;
+        }
       }
     }
   }
