@@ -1,0 +1,42 @@
+.highlighted-events {
+  .highlighted-events__content {
+    display: flex;
+    flex-direction: column;
+    gap: 46px;
+    padding: 24px 64px;
+
+    @media (min-width: 1200px) {
+      flex-direction: row;
+    }
+
+    p {
+      align-items: center;
+      display: flex;
+      font-size: 20px;
+      justify-content: center;
+      text-align: center;
+
+      @media (min-width: 1200px) {
+        text-align: right;
+      }
+    }
+
+    .highlighted-events__logo {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 46px;
+      justify-content: center;
+
+      @media (min-width: 1200px) {
+        flex-wrap: nowrap;
+        min-width: 540px;
+      }
+
+      img {
+        height: auto;
+        object-fit: contain;
+        width: 100px;
+      }
+    }
+  }
+}

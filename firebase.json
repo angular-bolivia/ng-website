@@ -1,12 +1,10 @@
 {
-  "functions": {
-    "source": "dist/analog/server"
-  },
   "hosting": {
-    "site": "ng-bolivia-website",
-    "public": "dist/analog/public",
-    "cleanUrls": true,
-    "rewrites": [{ "source": "**", "function": "server" }],
-    "ignore": ["firebase.json", "**/.*", "**/node_modules/**"]
+    "public": "dist",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ]
   }
 }

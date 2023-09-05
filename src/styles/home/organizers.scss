@@ -1,0 +1,49 @@
+.organizers {
+  background-color: #1c1c1c;
+  padding: 64px 0;
+
+  .organizers__content {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+    text-align: center;
+
+    h2 {
+      color: #f9b570;
+      font-size: 24px;
+    }
+
+    .organizers__profiles {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+
+      .organizers__profile {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        padding: 0 5px;
+
+        & > img {
+          height: 180px;
+          width: 180px;
+        }
+
+        .organizers__name {
+          color: #33f8d8;
+          font-size: 20px;
+          font-weight: 500;
+          margin-block-start: 16px;
+        }
+
+        a {
+          display: block;
+          padding: 8px;
+          width: fit-content;
+        }
+      }
+    }
+  }
+}

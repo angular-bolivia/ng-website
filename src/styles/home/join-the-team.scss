@@ -1,0 +1,52 @@
+.join-the-team {
+  background-image: url('/img/background.png');
+  background-size: cover;
+  padding: 64px 0;
+
+  .join-the-team__content {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+
+    h2 {
+      color: #f9b570;
+      font-size: 24px;
+    }
+
+    .join-the-team__cards {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+
+      .join-the-team__card {
+        background-color: #1c1c1c;
+        width: 100%;
+        max-width: 392px;
+
+        .join-the-team__card-title {
+          padding: 16px;
+
+          h3 {
+            font-size: 20px;
+            font-weight: 500;
+          }
+        }
+
+        img {
+          height: auto;
+          max-width: 100%;
+        }
+
+        .join-the-team__card-content {
+          padding: 16px;
+        }
+
+        .join-the-team__card-action {
+          padding: 8px 16px;
+        }
+      }
+    }
+  }
+}
