@@ -19,7 +19,7 @@ import { Component } from '@angular/core';
             </p>
             <img
               src="/img/community-photo.png"
-              alt="Fotografía de la comunidad en el NG-Bolivia 2019"
+              alt="Fotografía de la comunidad Angular Bolivia en el NG-Bolivia 2019"
             />
           </div>
           <div class="about-us__block">
@@ -47,7 +47,7 @@ import { Component } from '@angular/core';
             </p>
             <img
               src="/img/history-photo.png"
-              alt="Fotografía de la comunidad en el NG-Bolivia 2018"
+              alt="Fotografía de la comunidad Angular Bolivia en el NG-Bolivia 2018"
             />
           </div>
         </div>

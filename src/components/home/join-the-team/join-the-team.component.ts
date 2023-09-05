@@ -19,7 +19,7 @@ import { Component } from '@angular/core';
               </div>
               <img
                 src="/img/speakers-card.png"
-                alt="Fotografía de un speaker exponiendo"
+                alt="Fotografía de un speaker exponiendo para la comunidad Angular Bolivia"
               />
               <div class="join-the-team__card-content">
                 <p>
@@ -49,7 +49,7 @@ import { Component } from '@angular/core';
               </div>
               <img
                 src="/img/team-card.png"
-                alt="Fotografía de la comunidad en un evento"
+                alt="Fotografía de la comunidad Angular Bolivia en el evento NG-Bolivia 2018"
               />
               <div class="join-the-team__card-content">
                 <p>¿Tienes muchas ganas de organizar eventos y aprender?</p>
