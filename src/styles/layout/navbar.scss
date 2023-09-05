@@ -37,7 +37,11 @@
     .navbar__links {
       align-items: center;
       display: flex;
-      gap: 24px;
+      gap: 20px;
+      
+      @media (min-width: 768px) {
+        gap: 24px;
+      }
 
       .navbar__mobile-text {
         display: inline;

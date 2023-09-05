@@ -31,6 +31,13 @@ import { Component } from '@angular/core';
               </span>
             </a>
             <a
+              href="https://twitter.com/angularBolivia/"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              <img src="/img/twitter-logo.svg" alt="Logo de Twitter" />
+            </a>
+            <a
               href="https://www.linkedin.com/company/angular-bolivia/"
               rel="noopener noreferrer"
               target="_blank"
