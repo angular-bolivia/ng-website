@@ -20,6 +20,8 @@ import { Component } from '@angular/core';
             >
               <img
                 src="/img/ng-bolivia-2018-logo.png"
+                width="100"
+                height="109"
                 alt="Logo de NG-Bolivia 2018 de la comunidad Angular Bolivia"
               />
             </a>
@@ -30,6 +32,8 @@ import { Component } from '@angular/core';
             >
               <img
                 src="/img/ng-bolivia-2019-logo.png"
+                width="100"
+                height="110"
                 alt="Logo de NG-Bolivia 2019 de la comunidad Angular Bolivia"
               />
             </a>
@@ -40,6 +44,8 @@ import { Component } from '@angular/core';
             >
               <img
                 src="/img/tsday-logo.png"
+                width="100"
+                height="53"
                 alt="Logo de TSDay de la comunidad Angular Bolivia"
               />
             </a>
@@ -50,6 +56,8 @@ import { Component } from '@angular/core';
             >
               <img
                 src="/img/ng-she-logo.png"
+                width="100"
+                height="120"
                 alt="Logo de NG-She de la comunidad Angular Bolivia"
               />
             </a>

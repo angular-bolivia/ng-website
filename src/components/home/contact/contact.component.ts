@@ -13,7 +13,12 @@ import { Component } from '@angular/core';
             {{ 'Contacto' | uppercase }}
           </h2>
           <a class="contact__email" href="mailto:angularbolivia@gmail.com">
-            <img src="/img/email-logo.svg" alt="Logo de email" />
+            <img
+              src="/img/email-logo.svg"
+              width="16"
+              height="20"
+              alt="Logo de email"
+            />
             angularbolivia@gmail.com
           </a>
         </div>

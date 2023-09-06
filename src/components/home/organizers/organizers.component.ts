@@ -12,7 +12,12 @@ import { Component } from '@angular/core';
           <h2>{{ 'Lead organizers' | uppercase }}</h2>
           <div class="organizers__profiles">
             <div class="organizers__profile">
-              <img src="/img/mauri.png" alt="Fotografía de Mauricio Arce, Lead Organizer de Angular Bolivia" />
+              <img
+                src="/img/mauri.png"
+                width="180"
+                height="180"
+                alt="Fotografía de Mauricio Arce, Lead Organizer de Angular Bolivia"
+              />
               <p class="organizers__name">Mauricio Arce</p>
               <p>Front-end Developer</p>
               <a
@@ -20,11 +25,21 @@ import { Component } from '@angular/core';
                 rel="noopener noreferrer"
                 target="_blank"
               >
-                <img src="/img/linkedin-logo.svg" alt="Logo de LinkedIn" />
+                <img
+                  src="/img/linkedin-logo.svg"
+                  width="24"
+                  height="24"
+                  alt="Logo de LinkedIn"
+                />
               </a>
             </div>
             <div class="organizers__profile">
-              <img src="/img/griss.png" alt="Fotografía de Griselda García, Lead Organizer de Angular Bolivia" />
+              <img
+                src="/img/griss.png"
+                width="180"
+                height="180"
+                alt="Fotografía de Griselda García, Lead Organizer de Angular Bolivia"
+              />
               <p class="organizers__name">Griselda García</p>
               <p>Full Stack Developer</p>
               <a
@@ -32,11 +47,21 @@ import { Component } from '@angular/core';
                 rel="noopener noreferrer"
                 target="_blank"
               >
-                <img src="/img/linkedin-logo.svg" alt="Logo de LinkedIn" />
+                <img
+                  src="/img/linkedin-logo.svg"
+                  width="24"
+                  height="24"
+                  alt="Logo de LinkedIn"
+                />
               </a>
             </div>
             <div class="organizers__profile">
-              <img src="/img/gus.png" alt="Fotografía de Gustavo Pacchi, Lead Organizer de Angular Bolivia" />
+              <img
+                src="/img/gus.png"
+                width="180"
+                height="180"
+                alt="Fotografía de Gustavo Pacchi, Lead Organizer de Angular Bolivia"
+              />
               <p class="organizers__name">Gustavo Pacchi</p>
               <p>UI/UX Designer</p>
               <a
@@ -44,11 +69,21 @@ import { Component } from '@angular/core';
                 rel="noopener noreferrer"
                 target="_blank"
               >
-                <img src="/img/linkedin-logo.svg" alt="Logo de LinkedIn" />
+                <img
+                  src="/img/linkedin-logo.svg"
+                  width="24"
+                  height="24"
+                  alt="Logo de LinkedIn"
+                />
               </a>
             </div>
             <div class="organizers__profile">
-              <img src="/img/lizzy.png" alt="Fotografía de Lizzy Mendivil, Lead Organizer de Angular Bolivia" />
+              <img
+                src="/img/lizzy.png"
+                width="180"
+                height="180"
+                alt="Fotografía de Lizzy Mendivil, Lead Organizer de Angular Bolivia"
+              />
               <p class="organizers__name">Lizzy Mendivil</p>
               <p>Full Stack Developer</p>
               <a
@@ -56,7 +91,12 @@ import { Component } from '@angular/core';
                 rel="noopener noreferrer"
                 target="_blank"
               >
-                <img src="/img/linkedin-logo.svg" alt="Logo de LinkedIn" />
+                <img
+                  src="/img/linkedin-logo.svg"
+                  width="24"
+                  height="24"
+                  alt="Logo de LinkedIn"
+                />
               </a>
             </div>
           </div>

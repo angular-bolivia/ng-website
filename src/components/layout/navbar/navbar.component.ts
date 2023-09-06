@@ -12,6 +12,8 @@ import { Component } from '@angular/core';
           <div class="navbar__logo">
             <img
               src="/img/main-logo.svg"
+              width="34"
+              height="36"
               alt="Logo principal de Angular Bolivia"
             />
             <span>{{ 'ngular Bolivia' | uppercase }}</span>
@@ -35,28 +37,48 @@ import { Component } from '@angular/core';
               rel="noopener noreferrer"
               target="_blank"
             >
-              <img src="/img/twitter-logo.svg" alt="Logo de Twitter" />
+              <img
+                src="/img/twitter-logo.svg"
+                width="24"
+                height="27"
+                alt="Logo de Twitter"
+              />
             </a>
             <a
               href="https://www.linkedin.com/company/angular-bolivia/"
               rel="noopener noreferrer"
               target="_blank"
             >
-              <img src="/img/linkedin-logo.svg" alt="Logo de LinkedIn" />
+              <img
+                src="/img/linkedin-logo.svg"
+                width="24"
+                height="24"
+                alt="Logo de LinkedIn"
+              />
             </a>
             <a
               href="https://www.facebook.com/angularBolivia/"
               rel="noopener noreferrer"
               target="_blank"
             >
-              <img src="/img/facebook-logo.svg" alt="Logo de Facebook" />
+              <img
+                src="/img/facebook-logo.svg"
+                width="24"
+                height="24"
+                alt="Logo de Facebook"
+              />
             </a>
             <a
               href="https://www.instagram.com/angularbolivia/"
               rel="noopener noreferrer"
               target="_blank"
             >
-              <img src="/img/instagram-logo.svg" alt="Logo de Instagram" />
+              <img
+                src="/img/instagram-logo.svg"
+                width="24"
+                height="24"
+                alt="Logo de Instagram"
+              />
             </a>
           </div>
         </div>
