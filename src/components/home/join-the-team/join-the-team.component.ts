@@ -62,7 +62,7 @@ import { Component } from '@angular/core';
               <div class="join-the-team__card-action">
                 <a
                   class="main-button"
-                  href="https://www.meetup.com/angular-bolivia/events/295898011/?utm_medium=referral&utm_campaign=share-btn_savedevents_share_modal&utm_source=link"
+                  href="https://www.meetup.com/angular-bolivia/events/297200793/?utm_medium=referral&utm_campaign=share-btn_savedevents_share_modal&utm_source=link"
                   rel="noopener noreferrer"
                   target="_blank"
                 >
