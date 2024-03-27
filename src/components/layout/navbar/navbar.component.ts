@@ -9,15 +9,12 @@ import { Component } from '@angular/core';
     <div class="navbar">
       <div class="container">
         <div class="navbar__content">
-          <div class="navbar__logo">
-            <img
-              src="/img/main-logo.svg"
-              width="34"
-              height="36"
-              alt="Logo principal de Angular Bolivia"
-            />
-            <span>{{ 'ngular Bolivia' | uppercase }}</span>
-          </div>
+          <img
+            src="/img/ng-logo.svg"
+            width="34"
+            height="36"
+            alt="Logo principal de Angular Bolivia"
+          />
           <div class="navbar__links">
             <a
               class="main-button"

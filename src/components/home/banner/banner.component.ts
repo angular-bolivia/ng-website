@@ -10,9 +10,9 @@ import { Component } from '@angular/core';
       <div class="banner__content">
         <img
           class="banner__logo"
-          width="369"
-          height="395"
-          src="/img/ng-logo.svg"
+          width="650"
+          height="100"
+          src="/img/main-logo.svg"
           alt="Logo de Angular Bolivia"
         />
         <h1>

@@ -16,26 +16,11 @@
     height: 100%;
     justify-content: space-between;
 
-    .navbar__logo {
-      align-items: center;
-      display: flex;
-      font-family: Roboto, sans-serif;
-
-      span {
-        display: none;
-        font-size: 14px;
-
-        @media (min-width: 768px) {
-          display: inline;
-        }
-      }
-    }
-
     .navbar__links {
       align-items: center;
       display: flex;
       gap: 20px;
-      
+
       @media (min-width: 768px) {
         gap: 24px;
       }
