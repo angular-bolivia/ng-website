@@ -62,7 +62,7 @@ import { Component } from '@angular/core';
               <div class="join-the-team__card-action">
                 <a
                   class="main-button"
-                  href="https://lu.ma/lw6yrt83"
+                  href="https://forms.gle/dTguMHJFkzJeZX4bA"
                   rel="noopener noreferrer"
                   target="_blank"
                 >
