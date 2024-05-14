@@ -18,7 +18,7 @@ import { Component } from '@angular/core';
           <div class="navbar__links">
             <a
               class="main-button"
-              href="https://forms.gle/dTguMHJFkzJeZX4bA"
+              href="https://lu.ma/AngularRevolution-MC4"
               rel="noopener noreferrer"
               target="_blank"
             >
