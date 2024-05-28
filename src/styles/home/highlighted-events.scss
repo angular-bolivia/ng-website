@@ -1,4 +1,8 @@
 .highlighted-events {
+  border: 1px solid #2b2a2a;
+  border-left: none;
+  border-right: none;
+
   .highlighted-events__content {
     display: flex;
     flex-direction: column;

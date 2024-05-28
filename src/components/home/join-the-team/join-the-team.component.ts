@@ -62,9 +62,7 @@ import { Component } from '@angular/core';
               <div class="join-the-team__card-action">
                 <a
                   class="main-button"
-                  href="https://lu.ma/AngularRevolution-MC4"
-                  rel="noopener noreferrer"
-                  target="_blank"
+                  href="#next-events"
                 >
                   {{ 'Inscríbete al próximo evento' | uppercase }}
                 </a>

@@ -1,0 +1,27 @@
+.next-events {
+  padding: 64px 0;
+
+  h2 {
+    font-size: 24px;
+    margin-block-end: 24px;
+    text-align: center;
+  }
+
+  .next-events__cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    justify-content: space-around;
+
+    .next-events__card {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+
+      img {
+        max-width: 100%;
+        object-fit: cover;
+      }
+    }
+  }
+}

@@ -6,6 +6,7 @@ import '../styles/home/banner.scss';
 import '../styles/home/contact.scss';
 import '../styles/home/highlighted-events.scss';
 import '../styles/home/join-the-team.scss';
+import '../styles/home/next-events.scss';
 import '../styles/home/organizers.scss';
 
 import GoogleAnalytics from '../components/google-analytics/google-analytics.astro';
@@ -15,6 +16,7 @@ import { BannerComponent } from '../components/home/banner/banner.component';
 import { ContactComponent } from '../components/home/contact/contact.component';
 import { HighlightedEventsComponent } from '../components/home/highlighted-events/highlighted-events.component';
 import { JoinTheTeamComponent } from '../components/home/join-the-team/join-the-team.component';
+import { NextEventsComponent } from '../components/home/next-events/next-events.component';
 import { OrganizersComponent } from '../components/home/organizers/organizers.component';
 ---
 
@@ -43,7 +45,8 @@ import { OrganizersComponent } from '../components/home/organizers/organizers.co
   <body>
     <NavbarComponent />
     <BannerComponent />
-    <div class="multi-section-container">
+    <div id="next-events" class="multi-section-container">
+      <NextEventsComponent />
       <HighlightedEventsComponent />
       <AboutUsComponent />
     </div>

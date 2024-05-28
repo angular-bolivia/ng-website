@@ -9,19 +9,16 @@ import { Component } from '@angular/core';
     <div class="navbar">
       <div class="container">
         <div class="navbar__content">
-          <img
-            src="/img/ng-logo.svg"
-            width="34"
-            height="36"
-            alt="Logo principal de Angular Bolivia"
-          />
+          <a href="/">
+            <img
+              src="/img/ng-logo.svg"
+              width="34"
+              height="36"
+              alt="Logo principal de Angular Bolivia"
+            />
+          </a>
           <div class="navbar__links">
-            <a
-              class="main-button"
-              href="https://lu.ma/AngularRevolution-MC4"
-              rel="noopener noreferrer"
-              target="_blank"
-            >
+            <a class="main-button" href="#next-events">
               <span class="navbar__mobile-text">
                 {{ 'Inscríbete' | uppercase }}
               </span>
