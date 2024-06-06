@@ -34,11 +34,6 @@ import { Component } from '@angular/core';
 export class NextEventsComponent {
   events = [
     {
-      title: 'Explorando Angular 18',
-      link: 'https://lu.ma/0m25cmh4',
-      image: '/img/explorando-angular.png',
-    },
-    {
       title: 'Angular Revolution',
       link: 'https://lu.ma/AngularRevolution-MC4',
       image: '/img/angular-revolution.jpeg',
