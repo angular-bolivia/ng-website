@@ -1,10 +1,10 @@
-import { NgFor, UpperCasePipe } from '@angular/common';
+import { NgFor, NgIf, UpperCasePipe } from '@angular/common';
 import { Component } from '@angular/core';
 
 @Component({
   selector: 'ng-next-events',
   standalone: true,
-  imports: [NgFor, UpperCasePipe],
+  imports: [NgFor, NgIf, UpperCasePipe],
   template: `
     <div class="next-events">
       <div class="container">
@@ -26,6 +26,9 @@ import { Component } from '@angular/core';
               {{ 'Inscríbete al evento' | uppercase }}
             </a>
           </div>
+          <p *ngIf="!events.length">
+            No hay eventos próximos por el momento. ¡Vuelve pronto!
+          </p>
         </div>
       </div>
     </div>
@@ -33,10 +36,10 @@ import { Component } from '@angular/core';
 })
 export class NextEventsComponent {
   events = [
-    {
-      title: 'Meetup La Paz',
-      link: 'https://lu.ma/4dvwydxw',
-      image: '/img/meetup-la-paz.webp',
-    },
+    // {
+    //   title: 'Meetup La Paz',
+    //   link: 'https://lu.ma/4dvwydxw',
+    //   image: '/img/meetup-la-paz.webp',
+    // },
   ];
 }
