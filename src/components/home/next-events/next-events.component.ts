@@ -36,10 +36,10 @@ import { Component } from '@angular/core';
 })
 export class NextEventsComponent {
   events = [
-    // {
-    //   title: 'Meetup La Paz',
-    //   link: 'https://lu.ma/4dvwydxw',
-    //   image: '/img/meetup-la-paz.webp',
-    // },
+    {
+      title: 'Meetup Octubre Cochabamba',
+      link: 'https://lu.ma/aeagfe6a',
+      image: '/img/meetup-octubre.webp',
+    },
   ];
 }
