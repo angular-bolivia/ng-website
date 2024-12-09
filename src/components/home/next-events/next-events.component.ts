@@ -39,7 +39,7 @@ export class NextEventsComponent {
     {
       title: 'Meetup Diciembre Cochabamba',
       link: 'https://events.combimauri.com/AxUu3JApVzuIsynZ9N0P',
-      image: '/img/ng-meetup-diciembre.webp',
+      image: '/img/meetup-diciembre.webp',
     },
   ];
 }
