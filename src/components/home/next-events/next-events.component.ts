@@ -37,9 +37,9 @@ import { Component } from '@angular/core';
 export class NextEventsComponent {
   events = [
     {
-      title: 'Meetup Octubre Cochabamba',
-      link: 'https://lu.ma/aeagfe6a',
-      image: '/img/meetup-octubre.webp',
+      title: 'Meetup Diciembre Cochabamba',
+      link: 'https://events.combimauri.com/AxUu3JApVzuIsynZ9N0P',
+      image: '/img/ng-meetup-diciembre.webp',
     },
   ];
 }
