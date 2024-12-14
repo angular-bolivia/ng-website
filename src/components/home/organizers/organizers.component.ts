@@ -79,15 +79,15 @@ import { Component } from '@angular/core';
             </div>
             <div class="organizers__profile">
               <img
-                src="/img/lizzy.png"
+                src="/img/rodri.webp"
                 width="180"
                 height="180"
-                alt="Fotografía de Lizzy Mendivil, Lead Organizer de Angular Bolivia"
+                alt="Fotografía de Rodrigo Torrico, Lead Organizer de Angular Bolivia"
               />
-              <p class="organizers__name">Lizzy Mendivil</p>
-              <p>Full Stack Developer</p>
+              <p class="organizers__name">Rodrigo Torrico</p>
+              <p>Senior Software Developer</p>
               <a
-                href="https://www.linkedin.com/in/lizzymendivil/"
+                href="https://www.linkedin.com/in/tokidev/"
                 rel="noopener noreferrer"
                 target="_blank"
               >
