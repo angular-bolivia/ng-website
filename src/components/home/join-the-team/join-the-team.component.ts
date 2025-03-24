@@ -35,7 +35,7 @@ import { Component } from '@angular/core';
               <div class="join-the-team__card-action">
                 <a
                   class="main-button"
-                  href="https://forms.gle/N8J3n5SUDymLJAyv8"
+                  href="https://forms.gle/uPjYrrXyXczUuA3X8"
                   rel="noopener noreferrer"
                   target="_blank"
                 >

@@ -36,10 +36,10 @@ import { Component } from '@angular/core';
 })
 export class NextEventsComponent {
   events = [
-    {
-      title: 'NG | Init',
-      link: 'https://init.ng.com.bo',
-      image: '/img/ng-init.webp',
-    },
+    // {
+    //   title: 'NG | Init',
+    //   link: 'https://init.ng.com.bo',
+    //   image: '/img/ng-init.webp',
+    // },
   ];
 }
