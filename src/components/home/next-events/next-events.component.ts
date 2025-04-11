@@ -36,10 +36,10 @@ import { Component } from '@angular/core';
 })
 export class NextEventsComponent {
   events = [
-    // {
-    //   title: 'NG | Init',
-    //   link: 'https://init.ng.com.bo',
-    //   image: '/img/ng-init.webp',
-    // },
+    {
+      title: 'Angular Meetup | La Paz',
+      link: 'https://events.combimauri.com/ng-meetup-la-paz-2025',
+      image: '/img/ng-meetup-abril-2025.webp',
+    },
   ];
 }
