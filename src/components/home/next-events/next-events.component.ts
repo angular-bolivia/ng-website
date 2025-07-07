@@ -37,9 +37,9 @@ import { Component } from '@angular/core';
 export class NextEventsComponent {
   events = [
     {
-      title: 'Angular Meetup | La Paz',
-      link: 'https://events.combimauri.com/ng-meetup-la-paz-2025',
-      image: '/img/ng-meetup-abril-2025.webp',
+      title: 'The Angular Flow',
+      link: 'https://events.combimauri.com/angular-flow-2025',
+      image: '/img/angular-flow-2025.webp',
     },
   ];
 }
