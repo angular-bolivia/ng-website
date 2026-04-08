@@ -1,14 +1,14 @@
-import { NgFor, NgIf, UpperCasePipe } from '@angular/common';
-import { Component } from '@angular/core';
+import { NgFor, NgIf, UpperCasePipe } from "@angular/common";
+import { Component } from "@angular/core";
 
 @Component({
-  selector: 'ng-next-events',
+  selector: "ng-next-events",
   standalone: true,
   imports: [NgFor, NgIf, UpperCasePipe],
   template: `
     <div class="next-events">
       <div class="container">
-        <h2>{{ 'Próximos eventos' | uppercase }}</h2>
+        <h2>{{ "Próximos eventos" | uppercase }}</h2>
         <div class="next-events__cards">
           <div *ngFor="let event of events" class="next-events__card">
             <img
@@ -23,7 +23,7 @@ import { Component } from '@angular/core';
               target="_blank"
               [href]="event.link"
             >
-              {{ 'Inscríbete al evento' | uppercase }}
+              {{ "Inscríbete al evento" | uppercase }}
             </a>
           </div>
           <p *ngIf="!events.length">
@@ -37,9 +37,9 @@ import { Component } from '@angular/core';
 export class NextEventsComponent {
   events = [
     {
-      title: 'The Angular Flow',
-      link: 'https://events.combimauri.com/angular-flow-2025',
-      image: '/img/angular-flow-2025.webp',
+      title: "Angular + AI",
+      link: "https://events.combimauri.com/ai-angular",
+      image: "/img/ai-angular.webp",
     },
   ];
 }
