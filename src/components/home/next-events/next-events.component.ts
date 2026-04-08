@@ -39,7 +39,7 @@ export class NextEventsComponent {
     {
       title: "Angular + AI",
       link: "https://events.combimauri.com/ai-angular",
-      image: "/img/ai-angular.webp",
+      image: "/img/ai-angular-2.webp",
     },
   ];
 }
