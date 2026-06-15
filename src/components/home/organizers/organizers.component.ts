@@ -3,7 +3,6 @@ import { Component } from '@angular/core';
 
 @Component({
   selector: 'ng-organizers',
-  standalone: true,
   imports: [UpperCasePipe],
   template: `
     <div class="organizers">

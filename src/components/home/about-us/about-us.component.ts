@@ -3,7 +3,6 @@ import { Component } from '@angular/core';
 
 @Component({
   selector: 'ng-about-us',
-  standalone: true,
   imports: [UpperCasePipe],
   template: `
     <div class="about-us">

@@ -3,7 +3,6 @@ import { Component } from '@angular/core';
 
 @Component({
   selector: 'ng-banner',
-  standalone: true,
   imports: [UpperCasePipe],
   template: `
     <div class="banner">

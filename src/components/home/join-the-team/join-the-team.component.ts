@@ -3,7 +3,6 @@ import { Component } from '@angular/core';
 
 @Component({
   selector: 'ng-join-the-team',
-  standalone: true,
   imports: [UpperCasePipe],
   template: `
     <div class="join-the-team">
