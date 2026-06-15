@@ -4,5 +4,12 @@ import partytown from "@astrojs/partytown";
 
 // https://astro.build/config
 export default defineConfig({
-  integrations: [analogjsangular(), partytown()]
+  integrations: [
+    analogjsangular(),
+    partytown({
+      config: {
+        forward: ['dataLayer.push'],
+      },
+    }),
+  ],
 });
