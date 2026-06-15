@@ -3,6 +3,13 @@ import { Component } from '@angular/core';
 
 import { links } from '../../../links';
 
+interface Organizer {
+  name: string;
+  role: string;
+  photo: string;
+  linkedin: string;
+}
+
 @Component({
   selector: 'ng-organizers',
   imports: [UpperCasePipe],
@@ -12,94 +19,34 @@ import { links } from '../../../links';
         <div class="organizers__content">
           <h2>{{ 'Lead organizers' | uppercase }}</h2>
           <div class="organizers__profiles">
-            <div class="organizers__profile">
-              <img
-                src="/img/luis.webp"
-                width="180"
-                height="180"
-                alt="Fotografía de Luis Aviles, Lead Organizer de Angular Bolivia"
-              />
-              <p class="organizers__name">Luis Aviles</p>
-              <p>Sr. Software Engineer</p>
-              <a
-                [href]="links.team.luisAviles"
-                rel="noopener noreferrer"
-                target="_blank"
-              >
+            @for (organizer of organizers; track organizer.linkedin) {
+              <div class="organizers__profile">
                 <img
-                  src="/img/linkedin-logo.svg"
-                  width="24"
-                  height="24"
-                  alt="Logo de LinkedIn"
+                  [src]="organizer.photo"
+                  width="180"
+                  height="180"
+                  [alt]="
+                    'Fotografía de ' +
+                    organizer.name +
+                    ', Lead Organizer de Angular Bolivia'
+                  "
                 />
-              </a>
-            </div>
-            <div class="organizers__profile">
-              <img
-                src="/img/mauri.webp"
-                width="180"
-                height="180"
-                alt="Fotografía de Mauricio Arce, Lead Organizer de Angular Bolivia"
-              />
-              <p class="organizers__name">Mauricio Arce</p>
-              <p>Front-end Developer</p>
-              <a
-                [href]="links.team.mauricioArce"
-                rel="noopener noreferrer"
-                target="_blank"
-              >
-                <img
-                  src="/img/linkedin-logo.svg"
-                  width="24"
-                  height="24"
-                  alt="Logo de LinkedIn"
-                />
-              </a>
-            </div>
-            <div class="organizers__profile">
-              <img
-                src="/img/griss.webp"
-                width="180"
-                height="180"
-                alt="Fotografía de Griselda García, Lead Organizer de Angular Bolivia"
-              />
-              <p class="organizers__name">Griselda García</p>
-              <p>Full Stack Developer</p>
-              <a
-                [href]="links.team.griseldaGarcia"
-                rel="noopener noreferrer"
-                target="_blank"
-              >
-                <img
-                  src="/img/linkedin-logo.svg"
-                  width="24"
-                  height="24"
-                  alt="Logo de LinkedIn"
-                />
-              </a>
-            </div>
-            <div class="organizers__profile">
-              <img
-                src="/img/rodri.webp"
-                width="180"
-                height="180"
-                alt="Fotografía de Rodrigo Torrico, Lead Organizer de Angular Bolivia"
-              />
-              <p class="organizers__name">Rodrigo Torrico</p>
-              <p>Sr. Software Developer</p>
-              <a
-                [href]="links.team.rodrigoTorrico"
-                rel="noopener noreferrer"
-                target="_blank"
-              >
-                <img
-                  src="/img/linkedin-logo.svg"
-                  width="24"
-                  height="24"
-                  alt="Logo de LinkedIn"
-                />
-              </a>
-            </div>
+                <p class="organizers__name">{{ organizer.name }}</p>
+                <p>{{ organizer.role }}</p>
+                <a
+                  [href]="organizer.linkedin"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                >
+                  <img
+                    src="/img/linkedin-logo.svg"
+                    width="24"
+                    height="24"
+                    alt="Logo de LinkedIn"
+                  />
+                </a>
+              </div>
+            }
           </div>
         </div>
       </div>
@@ -107,5 +54,30 @@ import { links } from '../../../links';
   `,
 })
 export class OrganizersComponent {
-  readonly links = links;
+  readonly organizers: Organizer[] = [
+    {
+      name: 'Luis Aviles',
+      role: 'Sr. Software Engineer',
+      photo: '/img/luis.webp',
+      linkedin: links.team.luisAviles,
+    },
+    {
+      name: 'Mauricio Arce',
+      role: 'Front-end Developer',
+      photo: '/img/mauri.webp',
+      linkedin: links.team.mauricioArce,
+    },
+    {
+      name: 'Griselda García',
+      role: 'Full Stack Developer',
+      photo: '/img/griss.webp',
+      linkedin: links.team.griseldaGarcia,
+    },
+    {
+      name: 'Rodrigo Torrico',
+      role: 'Sr. Software Developer',
+      photo: '/img/rodri.webp',
+      linkedin: links.team.rodrigoTorrico,
+    },
+  ];
 }

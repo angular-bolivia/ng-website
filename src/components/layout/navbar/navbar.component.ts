@@ -3,6 +3,14 @@ import { Component } from '@angular/core';
 
 import { links } from '../../../links';
 
+interface SocialLink {
+  url: string;
+  icon: string;
+  alt: string;
+  width: number;
+  height: number;
+}
+
 @Component({
   selector: 'ng-navbar',
   imports: [UpperCasePipe],
@@ -27,54 +35,16 @@ import { links } from '../../../links';
                 {{ 'Inscríbete al próximo evento' | uppercase }}
               </span>
             </a>
-            <a
-              [href]="links.social.twitter"
-              rel="noopener noreferrer"
-              target="_blank"
-            >
-              <img
-                src="/img/twitter-logo.svg"
-                width="24"
-                height="27"
-                alt="Logo de Twitter"
-              />
-            </a>
-            <a
-              [href]="links.social.linkedin"
-              rel="noopener noreferrer"
-              target="_blank"
-            >
-              <img
-                src="/img/linkedin-logo.svg"
-                width="24"
-                height="24"
-                alt="Logo de LinkedIn"
-              />
-            </a>
-            <a
-              [href]="links.social.facebook"
-              rel="noopener noreferrer"
-              target="_blank"
-            >
-              <img
-                src="/img/facebook-logo.svg"
-                width="24"
-                height="24"
-                alt="Logo de Facebook"
-              />
-            </a>
-            <a
-              [href]="links.social.instagram"
-              rel="noopener noreferrer"
-              target="_blank"
-            >
-              <img
-                src="/img/instagram-logo.svg"
-                width="24"
-                height="24"
-                alt="Logo de Instagram"
-              />
-            </a>
+            @for (social of socialLinks; track social.url) {
+              <a [href]="social.url" rel="noopener noreferrer" target="_blank">
+                <img
+                  [src]="social.icon"
+                  [width]="social.width"
+                  [height]="social.height"
+                  [alt]="social.alt"
+                />
+              </a>
+            }
           </div>
         </div>
       </div>
@@ -82,5 +52,34 @@ import { links } from '../../../links';
   `,
 })
 export class NavbarComponent {
-  readonly links = links;
+  readonly socialLinks: SocialLink[] = [
+    {
+      url: links.social.twitter,
+      icon: '/img/twitter-logo.svg',
+      alt: 'Logo de Twitter',
+      width: 24,
+      height: 27,
+    },
+    {
+      url: links.social.linkedin,
+      icon: '/img/linkedin-logo.svg',
+      alt: 'Logo de LinkedIn',
+      width: 24,
+      height: 24,
+    },
+    {
+      url: links.social.facebook,
+      icon: '/img/facebook-logo.svg',
+      alt: 'Logo de Facebook',
+      width: 24,
+      height: 24,
+    },
+    {
+      url: links.social.instagram,
+      icon: '/img/instagram-logo.svg',
+      alt: 'Logo de Instagram',
+      width: 24,
+      height: 24,
+    },
+  ];
 }
