@@ -1,6 +1,8 @@
 import { UpperCasePipe } from '@angular/common';
 import { Component } from '@angular/core';
 
+import { links } from '../../../links';
+
 @Component({
   selector: 'ng-join-the-team',
   imports: [UpperCasePipe],
@@ -34,7 +36,7 @@ import { Component } from '@angular/core';
               <div class="join-the-team__card-action">
                 <a
                   class="main-button"
-                  href="https://forms.gle/uPjYrrXyXczUuA3X8"
+                  [href]="links.speakerApplication"
                   rel="noopener noreferrer"
                   target="_blank"
                 >
@@ -73,4 +75,6 @@ import { Component } from '@angular/core';
     </div>
   `,
 })
-export class JoinTheTeamComponent {}
+export class JoinTheTeamComponent {
+  readonly links = links;
+}

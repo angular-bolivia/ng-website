@@ -1,6 +1,8 @@
 import { UpperCasePipe } from '@angular/common';
 import { Component } from '@angular/core';
 
+import { links } from '../../../links';
+
 @Component({
   selector: 'ng-navbar',
   imports: [UpperCasePipe],
@@ -26,7 +28,7 @@ import { Component } from '@angular/core';
               </span>
             </a>
             <a
-              href="https://twitter.com/angularBolivia/"
+              [href]="links.social.twitter"
               rel="noopener noreferrer"
               target="_blank"
             >
@@ -38,7 +40,7 @@ import { Component } from '@angular/core';
               />
             </a>
             <a
-              href="https://www.linkedin.com/company/angular-bolivia/"
+              [href]="links.social.linkedin"
               rel="noopener noreferrer"
               target="_blank"
             >
@@ -50,7 +52,7 @@ import { Component } from '@angular/core';
               />
             </a>
             <a
-              href="https://www.facebook.com/angularBolivia/"
+              [href]="links.social.facebook"
               rel="noopener noreferrer"
               target="_blank"
             >
@@ -62,7 +64,7 @@ import { Component } from '@angular/core';
               />
             </a>
             <a
-              href="https://www.instagram.com/angularbolivia/"
+              [href]="links.social.instagram"
               rel="noopener noreferrer"
               target="_blank"
             >
@@ -79,4 +81,6 @@ import { Component } from '@angular/core';
     </div>
   `,
 })
-export class NavbarComponent {}
+export class NavbarComponent {
+  readonly links = links;
+}

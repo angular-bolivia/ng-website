@@ -1,6 +1,8 @@
 import { UpperCasePipe } from '@angular/common';
 import { Component } from '@angular/core';
 
+import { links } from '../../../links';
+
 @Component({
   selector: 'ng-organizers',
   imports: [UpperCasePipe],
@@ -20,7 +22,7 @@ import { Component } from '@angular/core';
               <p class="organizers__name">Luis Aviles</p>
               <p>Sr. Software Engineer</p>
               <a
-                href="https://www.linkedin.com/in/luixaviles/"
+                [href]="links.team.luisAviles"
                 rel="noopener noreferrer"
                 target="_blank"
               >
@@ -42,7 +44,7 @@ import { Component } from '@angular/core';
               <p class="organizers__name">Mauricio Arce</p>
               <p>Front-end Developer</p>
               <a
-                href="https://www.linkedin.com/in/combimauri/"
+                [href]="links.team.mauricioArce"
                 rel="noopener noreferrer"
                 target="_blank"
               >
@@ -64,7 +66,7 @@ import { Component } from '@angular/core';
               <p class="organizers__name">Griselda García</p>
               <p>Full Stack Developer</p>
               <a
-                href="https://www.linkedin.com/in/combigriss/"
+                [href]="links.team.griseldaGarcia"
                 rel="noopener noreferrer"
                 target="_blank"
               >
@@ -86,7 +88,7 @@ import { Component } from '@angular/core';
               <p class="organizers__name">Gustavo Pacchi</p>
               <p>UI/UX Designer</p>
               <a
-                href="https://www.linkedin.com/in/gustavo-pacchi-villarroel/"
+                [href]="links.team.gustavoPacchi"
                 rel="noopener noreferrer"
                 target="_blank"
               >
@@ -108,7 +110,7 @@ import { Component } from '@angular/core';
               <p class="organizers__name">Rodrigo Torrico</p>
               <p>Sr. Software Developer</p>
               <a
-                href="https://www.linkedin.com/in/tokidev/"
+                [href]="links.team.rodrigoTorrico"
                 rel="noopener noreferrer"
                 target="_blank"
               >
@@ -126,4 +128,6 @@ import { Component } from '@angular/core';
     </div>
   `,
 })
-export class OrganizersComponent {}
+export class OrganizersComponent {
+  readonly links = links;
+}

@@ -1,6 +1,8 @@
 import { UpperCasePipe } from '@angular/common';
 import { Component } from '@angular/core';
 
+import { links } from '../../../links';
+
 @Component({
   selector: 'ng-about-us',
   imports: [UpperCasePipe],
@@ -26,7 +28,7 @@ import { Component } from '@angular/core';
             <p>
               Fundada en marzo de 2017 por
               <a
-                href="https://www.linkedin.com/in/luixaviles/"
+                [href]="links.team.luisAviles"
                 rel="noopener noreferrer"
                 target="_blank"
                 >Luis Aviles</a
@@ -53,4 +55,6 @@ import { Component } from '@angular/core';
     </div>
   `,
 })
-export class AboutUsComponent {}
+export class AboutUsComponent {
+  readonly links = links;
+}

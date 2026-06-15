@@ -1,6 +1,8 @@
 import { UpperCasePipe } from '@angular/common';
 import { Component } from '@angular/core';
 
+import { links } from '../../../links';
+
 @Component({
   selector: 'ng-highlighted-events',
   imports: [UpperCasePipe],
@@ -13,7 +15,7 @@ import { Component } from '@angular/core';
           </p>
           <div class="highlighted-events__logos">
             <a
-              href="https://www.youtube.com/watch?v=Q3pp4bm5H3I&list=PLRejFvqDqGo6AMNYSLluAVGbq-CHQ0Lkt"
+              [href]="links.events.ngBolivia2018"
               rel="noopener noreferrer"
               target="_blank"
             >
@@ -25,7 +27,7 @@ import { Component } from '@angular/core';
               />
             </a>
             <a
-              href="https://www.youtube.com/watch?v=29w4cAjpMKA&list=PLRejFvqDqGo5moBGpb-A-QtZDjCMFFknf"
+              [href]="links.events.ngBolivia2019"
               rel="noopener noreferrer"
               target="_blank"
             >
@@ -37,7 +39,7 @@ import { Component } from '@angular/core';
               />
             </a>
             <a
-              href="https://www.youtube.com/live/_Gdygm9hBNA?si=LKauDOs0GqD4sKUl"
+              [href]="links.events.tsday"
               rel="noopener noreferrer"
               target="_blank"
             >
@@ -49,7 +51,7 @@ import { Component } from '@angular/core';
               />
             </a>
             <a
-              href="https://ngshe.ng-bolivia.org/"
+              [href]="links.events.ngShe"
               rel="noopener noreferrer"
               target="_blank"
             >
@@ -66,4 +68,6 @@ import { Component } from '@angular/core';
     </div>
   `,
 })
-export class HighlightedEventsComponent {}
+export class HighlightedEventsComponent {
+  readonly links = links;
+}
