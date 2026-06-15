@@ -25,7 +25,7 @@ This is an **Astro** site that renders **standalone Angular components** via the
 - **`src/components/`** — Angular standalone components, grouped `home/<section>/` and `layout/`. Each is a single `.component.ts` with an **inline `template`** (no separate `.html`). Selectors are prefixed `ng-` (e.g. `ng-next-events`). Components hold their own content inline — e.g. `NextEventsComponent.events` is a `signal` holding the list of upcoming events. UI text is Spanish.
 - **`src/styles/`** — global and per-section SCSS, mirroring the component folders (`styles/home/<section>.scss`, `styles/layout/`). **Styles are NOT colocated in components**; they live here and are imported by `index.astro`. When adding a section, add both the component and its stylesheet, then wire both into `index.astro`.
 - **`src/components/google-analytics/google-analytics.astro`** — analytics, loaded off the main thread via the `@astrojs/partytown` integration.
-- **`public/`** — static assets served from `/` (images under `/img`, fonts under `/font`). Components reference these by absolute path (e.g. `/img/ai-angular-2.webp`).
+- **`public/`** — static assets served from `/` (images under `/img`, fonts under `/font`). Components reference these by absolute path (e.g. `/img/community-photo.png`).
 
 ### Conventions
 

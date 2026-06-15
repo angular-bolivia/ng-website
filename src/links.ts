@@ -19,7 +19,6 @@ export const links = {
     luisAviles: 'https://www.linkedin.com/in/luixaviles/',
     mauricioArce: 'https://www.linkedin.com/in/combimauri/',
     griseldaGarcia: 'https://www.linkedin.com/in/combigriss/',
-    gustavoPacchi: 'https://www.linkedin.com/in/gustavo-pacchi-villarroel/',
     rodrigoTorrico: 'https://www.linkedin.com/in/tokidev/',
   },
 

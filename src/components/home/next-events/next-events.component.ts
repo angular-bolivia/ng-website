@@ -41,11 +41,5 @@ interface CommunityEvent {
   `,
 })
 export class NextEventsComponent {
-  readonly events = signal<CommunityEvent[]>([
-    {
-      title: 'Angular + AI',
-      link: 'https://events.combimauri.com/ai-angular',
-      image: '/img/ai-angular-2.webp',
-    },
-  ]);
+  readonly events = signal<CommunityEvent[]>([]);
 }
