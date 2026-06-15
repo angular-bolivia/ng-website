@@ -1,6 +1,6 @@
 .navbar {
-  background-color: #141414;
-  box-shadow: 0 2px 3px 1px #14141480;
+  background-color: var(--color-surface-strong);
+  box-shadow: 0 2px 3px 1px var(--color-surface-strong-shadow);
   height: 64px;
   position: fixed;
   width: 100%;
@@ -29,6 +29,8 @@
         align-items: center;
         display: flex;
         justify-content: center;
+        min-height: 44px;
+        min-width: 44px;
       }
 
       .navbar__mobile-text {

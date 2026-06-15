@@ -1,5 +1,5 @@
 .organizers {
-  background-color: #1c1c1c;
+  background-color: var(--color-surface);
   padding: 64px 0;
 
   .organizers__content {
@@ -10,8 +10,7 @@
     text-align: center;
 
     h2 {
-      color: #f9b570;
-      font-size: 24px;
+      color: var(--color-heading);
     }
 
     .organizers__profiles {
@@ -27,8 +26,8 @@
         padding: 0 5px;
 
         .organizers__name {
-          color: #33f8d8;
-          font-size: 20px;
+          color: var(--color-link);
+          font-size: var(--text-lg);
           font-weight: 500;
           margin-block-start: 16px;
         }

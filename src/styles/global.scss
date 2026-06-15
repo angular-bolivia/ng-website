@@ -9,7 +9,28 @@
 
 /* You can add global styles to this file, and also import other style files */
 :root {
-  color: #fff;
+  /* Semantic color tokens */
+  --color-foreground: #fff;
+  --color-accent: #166ac5; /* primary CTA / blue */
+  --color-accent-shadow: #166ac580;
+  --color-surface: #1c1c1c; /* cards & alt sections */
+  --color-surface-strong: #141414; /* navbar */
+  --color-surface-strong-shadow: #14141480;
+  --color-border: #2b2a2a;
+  --color-heading: #f9b570; /* section headings */
+  --color-link: #33f8d8; /* links & names */
+  --color-text-shadow: #00000070;
+
+  /* Type scale */
+  --font-display: ClashGrotesk, sans-serif;
+  --text-sm: 14px;
+  --text-base: 16px;
+  --text-lg: 20px;
+  --text-xl: 24px;
+  --text-2xl: 32px;
+  --text-3xl: 40px;
+
+  color: var(--color-foreground);
   font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
   font-synthesis: none;
   scroll-behavior: smooth;
@@ -31,6 +52,17 @@ p {
   margin: 0;
 }
 
+h2 {
+  font-family: var(--font-display);
+  font-size: var(--text-xl);
+  letter-spacing: 2px;
+  line-height: 1.2;
+
+  @media (min-width: 576px) {
+    font-size: var(--text-2xl);
+  }
+}
+
 a {
   color: inherit;
   text-decoration: inherit;
@@ -39,6 +71,13 @@ a {
   &:hover {
     transform: translateY(-1px);
   }
+}
+
+a:focus-visible,
+.main-button:focus-visible {
+  border-radius: 4px;
+  outline: 2px solid var(--color-link);
+  outline-offset: 3px;
 }
 
 .container {
@@ -72,15 +111,63 @@ a {
 }
 
 .main-button {
-  background-color: #166ac5;
+  align-items: center;
+  background-color: var(--color-accent);
   border-radius: 4px;
-  display: block;
-  font-size: 14px;
+  box-sizing: border-box;
+  display: inline-flex;
+  font-size: var(--text-sm);
   font-weight: 500;
+  justify-content: center;
+  min-height: 44px;
   padding: 10px 16px;
+  touch-action: manipulation;
   width: fit-content;
 
   &:hover {
-    box-shadow: 0 2px 3px 1px #166ac580;
+    box-shadow: 0 2px 3px 1px var(--color-accent-shadow);
+  }
+}
+
+/* Subtle entrance: progressive enhancement via scroll-driven animation.
+   Browsers without `animation-timeline` simply render the final state. */
+@keyframes fade-in-up {
+  from {
+    opacity: 0;
+    transform: translateY(24px);
+  }
+
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@supports (animation-timeline: view()) {
+  @media (prefers-reduced-motion: no-preference) {
+    .next-events__card,
+    .highlighted-events__logos a,
+    .about-us__block,
+    .organizers__profile,
+    .join-the-team__card {
+      animation: fade-in-up linear both;
+      animation-range: entry 0% entry 60%;
+      animation-timeline: view();
+    }
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  :root {
+    scroll-behavior: auto;
+  }
+
+  *,
+  ::before,
+  ::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    animation-timeline: auto !important;
+    transition-duration: 0.01ms !important;
   }
 }

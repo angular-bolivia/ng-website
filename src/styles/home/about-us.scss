@@ -14,13 +14,12 @@
       flex-direction: column;
 
       h2 {
-        color: #f9b570;
-        font-size: 24px;
+        color: var(--color-heading);
         margin-block-end: 24px;
       }
 
       a {
-        color: #33f8d8;
+        color: var(--color-link);
 
         &:hover {
           text-decoration: underline;
