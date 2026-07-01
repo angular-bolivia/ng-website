@@ -46,7 +46,7 @@ export class NextEventsComponent {
       title: "Meetup Julio",
       link: "https://events.combimauri.com/ng-meetup-jul-26",
       image:
-        "https://firebasestorage.googleapis.com/v0/b/combi-events.appspot.com/o/events%2Fng-meetup-jul-26.webp?alt=media&token=043e0372-30a3-4d1c-a2eb-092eda1010d8",
+        "https://firebasestorage.googleapis.com/v0/b/combi-events.appspot.com/o/events%2Fng-meetup-jul-26.webp?alt=media&token=40c51665-7e87-425c-ac7d-6ad8daaeb8f2",
     },
   ]);
 }
