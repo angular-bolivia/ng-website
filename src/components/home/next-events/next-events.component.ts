@@ -41,5 +41,12 @@ interface CommunityEvent {
   `,
 })
 export class NextEventsComponent {
-  readonly events = signal<CommunityEvent[]>([]);
+  readonly events = signal<CommunityEvent[]>([
+    {
+      title: 'Meetup Julio',
+      link: 'https://events.combimauri.com/ng-meetup-jul-26',
+      image:
+        'https://firebasestorage.googleapis.com/v0/b/combi-events.appspot.com/o/events%2Fng-meetup-jul-26.webp?alt=media&token=62dae4c3-ac48-4dc7-9ed8-0616f76a87f1',
+    },
+  ]);
 }
