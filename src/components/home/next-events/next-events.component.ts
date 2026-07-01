@@ -1,5 +1,5 @@
-import { UpperCasePipe } from '@angular/common';
-import { Component, signal } from '@angular/core';
+import { UpperCasePipe } from "@angular/common";
+import { Component, signal } from "@angular/core";
 
 interface CommunityEvent {
   title: string;
@@ -8,12 +8,12 @@ interface CommunityEvent {
 }
 
 @Component({
-  selector: 'ng-next-events',
+  selector: "ng-next-events",
   imports: [UpperCasePipe],
   template: `
     <div class="next-events">
       <div class="container">
-        <h2>{{ 'Próximos eventos' | uppercase }}</h2>
+        <h2>{{ "Próximos eventos" | uppercase }}</h2>
         <div class="next-events__cards">
           @for (event of events(); track event.link) {
             <div class="next-events__card">
@@ -29,7 +29,7 @@ interface CommunityEvent {
                 target="_blank"
                 [href]="event.link"
               >
-                {{ 'Inscríbete al evento' | uppercase }}
+                {{ "Inscríbete al evento" | uppercase }}
               </a>
             </div>
           } @empty {
@@ -43,10 +43,10 @@ interface CommunityEvent {
 export class NextEventsComponent {
   readonly events = signal<CommunityEvent[]>([
     {
-      title: 'Meetup Julio',
-      link: 'https://events.combimauri.com/ng-meetup-jul-26',
+      title: "Meetup Julio",
+      link: "https://events.combimauri.com/ng-meetup-jul-26",
       image:
-        'https://firebasestorage.googleapis.com/v0/b/combi-events.appspot.com/o/events%2Fng-meetup-jul-26.webp?alt=media&token=62dae4c3-ac48-4dc7-9ed8-0616f76a87f1',
+        "https://firebasestorage.googleapis.com/v0/b/combi-events.appspot.com/o/events%2Fng-meetup-jul-26.webp?alt=media&token=043e0372-30a3-4d1c-a2eb-092eda1010d8",
     },
   ]);
 }
