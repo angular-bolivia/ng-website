@@ -15,3 +15,6 @@ jobs:
           repoToken: '${{ secrets.GITHUB_TOKEN }}'
           firebaseServiceAccount: '${{ secrets.FIREBASE_SERVICE_ACCOUNT_NG_BOLIVIA_WEBSITE }}'
           projectId: ng-bolivia-website
+          # Pinned to avoid the 15.22.3 regression (firebase/firebase-tools#10730)
+          # where deploys succeed but exit 1 on "current active version".
+          firebaseToolsVersion: 15.22.1
