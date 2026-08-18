@@ -43,9 +43,9 @@ interface CommunityEvent {
 export class NextEventsComponent {
   readonly events = signal<CommunityEvent[]>([
     {
-      title: "Meetup Julio",
-      link: "https://events.combimauri.com/ng-meetup-jul-26",
-      image: "/img/ng-meetup-jul-26.webp",
+      title: "Meetup Agosto",
+      link: "https://events.combimauri.com/ng-meetup-ago-26",
+      image: "/img/ng-meetup-ago-26.webp",
     },
   ]);
 }
